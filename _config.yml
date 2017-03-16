@@ -1,0 +1,73 @@
+# Site settings
+## Site metadata
+title: "Juicer Silencer"
+description: > # this means to ignore newlines until "baseurl:"
+  Your juicer is Loud! The Juicer Silencer turns your little jet engine into a kitten’s purr.
+
+## Github Pages
+### Mandatory Configuration defaults
+### https://help.github.com/articles/configuring-jekyll/
+lsi: false
+safe: true
+incremental: false
+highlighter: rouge
+gist:
+  noscript: false
+# source: repo top level directory
+
+### Templating
+markdown: kramdown # Github Pages mandatory config
+kramdown:
+  auto_id_stripping: true
+  input: GFM # Github Pages non-mandatory default
+  hard_wrap: false # Github Pages non-mandatory default
+  math_engine: mathjax # Github Pages mandatory config
+
+## Regional Settings
+timezone: America/Los_Angeles
+
+## Site structure
+### URL addresses
+url: "https://remy-actual.github.io" # the base hostname & protocol for your site
+  # Do not use in design assets; "site.url" is only used used in the xml feed and in the page head for the canonical header and the RSS link
+baseurl: "/juicersilencer" # the subpath of your site, e.g. /blog
+  # Use baseurl in design assets to indicate site root
+  # If your baseurl varies from dev to production environment, set baseurl to match production and either:
+  # 1. run locally with "jekyll serve"
+  # 2. configure local settings in a separate _config_dev.yml file
+  # See: http://stackoverflow.com/questions/27386169/change-site-url-to-localhost-during-jekyll-local-development for reference
+permalink: pretty
+# final trailing slash is optional here in config; will be appended to url address but not to {{ page.url }} liquid output
+
+## Build settings
+
+theme: jekyll-theme-architect
+
+### SCSS
+sass:
+  sass_dir: _sass
+  style: compressed
+
+### Include Github Pages supported plugins
+gems:
+  - jekyll-coffeescript # Github Pages non-mandatory default
+  - jekyll-feed
+  - jekyll-paginate # Github Pages non-mandatory default
+  - jekyll-redirect-from
+  - jekyll-sitemap
+  # jekyll-github-metadata # Needed for local dev instance only;
+  # available in site.github
+
+### Exclude working resources and manifests from Github Pages site build.
+exclude:
+  - CNAME
+  - Gemfile
+  - Gemfile.lock
+  - LICENSE
+  - node_modules/
+  - npm-debug.log
+  - package.json
+  - README.md
+  - vendor/
+  - webpack.config.js
+
