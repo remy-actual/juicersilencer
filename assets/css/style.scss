@@ -3,6 +3,10 @@
 
 @import "{{ site.theme }}";
 
+#main-content {
+  width: 100%;
+}
+
 header .cta {
   padding: 0.75rem 0;
   position: absolute;
@@ -12,6 +16,20 @@ header .cta {
 
 header .cta a {
   float: right;
+}
+
+.float-leftt {
+  float: leftt;
+}
+
+.float-right {
+  float: right;
+}
+
+.float-center {
+  float: none;
+  margin: 0 auto;
+  display: block
 }
 
 @media only screen and (max-width: 767px) {
