@@ -23,17 +23,21 @@
         </a>
         <h2>{{ site.description | default: site.github.project_tagline }}</h2>
         <div class="cta">
-          <a href="{{ site.paypal.link }}">
-            <img
-              src="{{ '/media/gold-rect-paypalcheckout-60px.png' | absolute_url }}" 
-              alt="Checkout online with Paypal"
-            >
-          </a>
-          <br />
-            <img
-              src="{{ '/media/cc-badges-ppmcvdam.png' | absolute_url }}"
-              alt="All major credit cards accepted."
-            >
+          {% if page.title == 'The Juicer Silencer' %}
+            <a href="{{ site.paypal.link }}">
+              <img
+                src="{{ '/media/gold-rect-paypalcheckout-60px.png' | absolute_url }}"
+                alt="Checkout online with Paypal"
+              >
+            </a>
+            <br />
+              <img
+                src="{{ '/media/cc-badges-ppmcvdam.png' | absolute_url }}"
+                alt="All major credit cards accepted."
+              >
+          {% else %}
+            <a href="{{ '/' | absolute_url }}" class="button home">Home</a>
+          {% endif %}
         </div>
       </div>
     </header>
