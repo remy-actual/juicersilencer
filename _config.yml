@@ -71,3 +71,6 @@ exclude:
   - vendor/
   - webpack.config.js
 
+paypal:
+  link: "http://temp"
+
