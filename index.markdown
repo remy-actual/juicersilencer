@@ -16,7 +16,7 @@ Custom made in California. If you have a weird sized blender or juicer or want t
 
 As it is it fits the Nutribullet, Vitamix, etc. Questions? Call CompetitiveSwimmer.com at 800.999.0824.  
 
-![Checkout online with Paypal][paypal]  
+[![Checkout online with Paypal][paypal]]({{ site.paypal.link }})  
 ![All major credit cards accepted.][cc]  
 
 [1243x1598]: {{ "/media/convenient-carrying-handle.jpg" | absolute_url }}
